@@ -1,92 +1,59 @@
-<html>
+    <html>
+    <head>
+        <title>Register</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="blog.css" />
 
-<head>
-    <title>Sign Up</title>
-    <style type="text/css">
-    label {
-        text-align: left;
-        float: left;
-        padding-top: 10px;
-        min-width: 170px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: heavy;
-        font-size: 125%;
-    }
+    </head>
+        <nav id="nav" class="sticky">
+            <ul>
+                <li class="current"><a href="HomePage.html">Home</a></li>
+                <li><a href="left-sidebar.html">About</a></li>
+                <li><a href="right-sidebar.html">Food</a></li>
+                <li><a href="login.html">Sign In/Register</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">More 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Workouts</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Settings</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
 
+    <body>
+        <form method="get" action="process.php">
+            <fieldset>
+                <label>First Name</label>
+                <input type="text" name="first_name" />
+                <br/>
+                <br/>
+                <label>Last Name</label>
+                <input type="text" name="last_name" />
+                <br/>
+                <br/>
+                <label>Email</label>
+                <input type="text" name="email" />
+                <br/>
+                <br/>
+                <label>Username</label>
+                <input type="text" name="username" />
+                <br/>
+                <br/>
+                <label>Password</label>
+                <input type="text" name="password" />
+                <br/>
+                <br/>
+                <input type="checkbox" name="disclaimer" /> Disclaimer
+                <br/>
+                <br/>
+                <br/>
+                <input type="submit" />
+            </fieldset>
+        </body>
 
-    fieldset {
-        border: 0;
-    }
-
-
-    input[type=text],
-    select,
-    textarea {
-        width: 25%;
-        padding: 15;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-        align-content: center;
-        float: none;
-    }
-
-    input[type=submit],
-    select,
-    textarea {
-        width: 10%;
-        border-radius: 4px;
-        border-color: none;
-        resize: vertical;
-        align-content: center;
-        float: none;
-        font-size: 120%;
-        background-color: darkgreen;
-        color: white;
-    }
-
-
-
-    input[type=checkbox],
-    select,
-    textarea {
-        border: none;
-        resize: vertical;
-        align-content: left;
-        align-content: flex-end
-    }
-    </style>
-</head>
-
-<body>
-    <form method="get" action="process.php">
-        <fieldset>
-            <label>First Name</label>
-            <input type="text" name="first_name" />
-            <br/>
-            <br/>
-            <label>Last Name</label>
-            <input type="text" name="last_name" />
-            <br/>
-            <br/>
-            <label>Email</label>
-            <input type="text" name="email" />
-            <br/>
-            <br/>
-            <label>Username</label>
-            <input type="text" name="username" />
-            <br/>
-            <br/>
-            <label>Password</label>
-            <input type="text" name="password" />
-            <br/>
-            <br/>
-            <input type="checkbox" name="disclaimer" /> Disclaimer
-            <br/>
-            <br/>
-            <br/>
-            <input type="submit" />
-        </fieldset>
-</body>
-
-</html>
+        </html>
