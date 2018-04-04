@@ -1,50 +1,58 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<title>FF Blog</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="blog.css" />
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title>FF Blog</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<link rel="stylesheet" href="blog.css" />
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	</head>
-	<body>
-		<nav id="nav" class="sticky">
-			<ul>
-				<li class="current"><a href="HomePage.html">Home</a></li>
-				<li><a href="left-sidebar.html">About</a></li>
-				<li><a href="right-sidebar.html">Food</a></li>
-				<li><a href="no-sidebar.html">Sign In</a></li>
-				<div class="dropdown">
-					<button class="dropbtn">More 
-						<i class="fa fa-caret-down"></i>
-					</button>
-					<div class="dropdown-content">
-						<a href="#">Workouts</a>
-						<a href="#">Blog</a>
-						<a href="#">Settings</a>
+		</head>
+		<body>
+			<nav id="nav" class="sticky" class="topnav">
+				<ul>
+					<li class="current"><a href="HomePage.html">Home</a></li>
+					<li><a href="left-sidebar.html">About</a></li>
+					<li><a href="right-sidebar.html">Food</a></li>
+					<li><a href="login.html">Sign In/Register</a></li>
+					<div class="dropdown">
+						<button class="dropbtn">More 
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="#">Workouts</a>
+							<a href="#">Blog</a>
+							<a href="#">Settings</a>
+						</div>
 					</div>
+					<div class="search-container">
+						<form action="/action_page.php">
+							<input type="text" placeholder="Search.." name="search">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+				</ul>
+			</nav>
+
+			<h1>FnF Blog!</h1>
+			<div class="row">
+				<div class="rightcolumn">
+					<h3>Popular Post</h3>
+					<div class="fakeimg"><p>Image</p></div>
+					<div class="fakeimg"><p>Image</p></div>
+					<div class="fakeimg"><p>Image</p></div>
 				</div>
-			</ul>
-		</nav>
-		<h1>FnF Blog!</h1>
-		<div class="row">
-			<div class="rightcolumn">
-				<h3>Popular Post</h3>
-				<div class="fakeimg"><p>Image</p></div>
-				<div class="fakeimg"><p>Image</p></div>
-				<div class="fakeimg"><p>Image</p></div>
-			</div>
-			<div class="leftcolumn">
-				<img src="images/beach.jpg" alt="Teamwork">
-				<h2><a href="https://dailyburn.com/life/fitness/high-intensity-hiit-workout/"><br>The Do-It-Anywhere HIIT Workout You Need to Try</a></h2>
-				<p>Our friends at Daily Burn wrote an awesome article on what HIIT is and why you should incorporate these types of workouts in your weekly routine! HIIT is great for burning calories even AFTER you're done working out. Want to burn calories the next day after a workout? Click the title to head over to Daily Burn to learn more.</p></br>
+				<div class="leftcolumn">
+					<img src="images/beach.jpg" alt="Teamwork">
+					<h2><a href="https://dailyburn.com/life/fitness/high-intensity-hiit-workout/"><br>The Do-It-Anywhere HIIT Workout You Need to Try</a></h2>
+					<p>Our friends at Daily Burn wrote an awesome article on what HIIT is and why you should incorporate these types of workouts in your weekly routine! HIIT is great for burning calories even AFTER you're done working out. Want to burn calories the next day after a workout? Click the title to head over to Daily Burn to learn more.</p></br>
 
-				<img src="images/nutritional-yeast.jpg">
-				<h2><a href="#"><br>What the Heck is Nutritional Yeast?</a></h2>
-				<p>Older blog post. Click link!</p>
+					<img src="images/nutritional-yeast.jpg">
+					<h2><a href="#"><br>What the Heck is Nutritional Yeast?</a></h2>
+					<p>Older blog post. Click link!</p>
+				</div>
 			</div>
-		</div>
 
-		<div class="card">	
-		</body>
-		</html>
+			<div class="card">	
+			</body>
+			</html>
