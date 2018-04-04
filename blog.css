@@ -4,6 +4,11 @@ title{
   text-align: center;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .img-thumbnail
 {
   background-size: cover;
@@ -55,6 +60,7 @@ li a:hover {
     top: 0;
 }
 
+
 nav.sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -63,6 +69,52 @@ nav.sticky {
   background-color: #4CAF50;
   border: 2px solid #4CAF50;
 
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
 }
 
 .dropdown {
@@ -158,6 +210,47 @@ nav.sticky {
     background: #ddd;
     margin-top: 20px;
 }
+
+
+
+/* Registering */
+            input[type=text],
+            select,
+            textarea {
+                width: 25%;
+                padding: 15;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+                align-content: center;
+                float: none;
+            }
+
+            input[type=submit],
+            select,
+            textarea {
+                width: 10%;
+                border-radius: 4px;
+                border-color: none;
+                resize: vertical;
+                align-content: center;
+                float: none;
+                font-size: 120%;
+                background-color: darkgreen;
+                color: white;
+            }
+
+
+
+            input[type=checkbox],
+            select,
+            textarea {
+                border: none;
+                resize: vertical;
+                align-content: left;
+                align-content: flex-end
+            }
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
