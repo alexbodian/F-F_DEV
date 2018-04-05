@@ -1,6 +1,33 @@
 <?php
+      require_once("config.php");
+
+      try{
+        $connString = "mysql:host=" . DBHOST . ";dbname=" .DBNAME;
+        $user = DBUSER;
+        $pass = DBPASS;
+        $pdo =null;
+      }catch(PDOException $e){
+        print "ERROR!: " . $e->getMessage() . "<br/>";
+
+        die();
+      }
+
 session_start();
 $_SESSION['message'] = '';
+$mysql
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+  if($_POST['password'] == $_POST['confirmpassword']){
+
+    $username = $mysql->real_escape_string($_POST['username']);
+    $email = $mysql->real_escape_string($_POST['email']);
+    $password = md5($_POST['password']);
+  }
+  else {
+    $_SESSION['message'] = "Passwords do not match";
+  }
+}
+
 ?>
 
        <meta charset="utf-8">
