@@ -28,33 +28,56 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+<head> 
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> F&F Home Page</title>
 
 
+   <link href= "dist/css/bootstrap.min.css" rel="stylesheet">
 
+   <link href= "assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="template-food.css" />
-
-    <title>Title</title> <!-- change to what you want the tab's title to be -->
-
-    <div  class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-light border-bottom box-shadow p-3 mb-2 bg-dark text-white">
-        <h5 class="my-0 mr-md-auto font-weight-normal">FnF</h5>
-        <nav class="my-2 my-md-0 mr-md-3 p-3 mb-2 bg-dark text-white">
-          <a class="p-2 text-white">Bob</a> <!--this will be the name of the logged in admin -->
-        </nav>
-        <a class="btn btn-outline-primary" href="#">Sign Out</a> <!-- remove the Username and Sign Out sections for the login page, they will be displayed after -->
-      </div>
+   <link href= "album.css" rel="stylesheet">
 
 </head>
 <body>
+<div class="navbar-wrapper">
+      <div class="container">
 
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="#">F&F</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">Blog</a></li>
+                <li><a href="#signin">Sign Up</a></li>
+                <li> <form method="get" action="search.php";>
+                <p></p>
+                            <input type="search" 
+                                   name="<?php echo SEARCHBOX; ?>"
+                                   placeholder="Search.."
+                                   value="<?php echo getSearchFor(); ?>"" />
+                            <input type="submit"/></form></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
     <div>
     <br>
@@ -270,8 +293,14 @@
 
     </td>
     </table>
+  
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2018 FnF Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
     
-
-
-</body>
+  </body>
 </html>
