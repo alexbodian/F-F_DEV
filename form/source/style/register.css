@@ -1,0 +1,123 @@
+#register fieldset
+{
+   width: 230px;
+   padding:20px;
+   border:1px solid #ccc;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+border-radius: 10px;   
+}
+
+#register legend, #register h2
+{
+   font-family : Arial, sans-serif;
+   font-size: 1.3em;
+   font-weight:bold;
+   color:#333;
+}
+
+#register label
+{
+   font-family : Arial, sans-serif;
+   font-size:0.8em;
+   font-weight: bold;
+}
+
+#register input[type="text"],#register textarea,
+#register input[type="password"]
+{
+  font-family : Arial, Verdana, sans-serif;
+  font-size: 0.8em;
+  line-height:140%;
+  color : #000; 
+  padding : 3px; 
+  border : 1px solid #999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+#register input[type="text"],
+#register input[type="password"]
+{
+  height:18px;
+  width:220px;
+}
+
+ #register #scaptcha
+{
+  width:60px;
+  height:18px;
+}
+
+#register input[type="submit"]
+{
+   width:100px;
+   height:30px;
+   padding-left:0px;
+}
+
+#register textarea
+{
+  height:120px;
+  width:310px;
+}
+
+#register input[type="text"]:focus,
+#register textarea:focus
+{
+  color : #009;
+  border : 1px solid #990000;
+  background-color : #ffff99;
+  font-weight:bold;
+}
+
+#register .container
+{
+   margin-top:8px;
+   margin-bottom: 10px;
+}
+
+#register .error
+{
+   font-family: Verdana, Arial, sans-serif; 
+   font-size: 0.7em;
+   color: #900;
+   background-color : #ffff00;
+}
+
+#register #register_password_errorloc
+{
+    clear:both;
+}
+
+#register .short_explanation
+{
+   font-family : Arial, sans-serif;
+   font-size: 0.6em;
+   color:#333;   
+}
+
+#register_content li
+{
+font-family : Arial, sans-serif;
+padding-top:10px;
+padding-bottom:10px;
+}
+#register_content
+{
+    font-family : Arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 150%
+}
+
+#register_content h2
+{
+   font-family : Arial, sans-serif;
+   font-size: 1.5em;
+   font-weight:bold;
+   color:#333;
+}
