@@ -175,8 +175,7 @@ while ($row = $result->fetch()) {
                 }else{
                 $link = "https://cdn.vox-cdn.com/thumbor/-MUN-48SZgakNEBeDP4VlAP-NWs=/0x920:1600x2084/1820x1213/filters:focal(644x1550:900x1806):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/59223947/9781787474802.1522497283.jpg";}
 
-        echo  "<div class=\"container\">";
-
+                    echo  "<div class=\"container\">";
                     echo  "<div class=\"row\">";
                     echo    "<div class=\"col-md-4\">";
                     echo "<div class=\"card mb-4 box-shadow\">";
@@ -184,8 +183,8 @@ while ($row = $result->fetch()) {
                     echo      "<div class=\"card-body\">";
                     echo '<a href="food_test.php?recipeid=' . $row['ID'] . '">';
                     echo       "<div>" ;
-                   echo  "<p class=\"card-text\">" . $row['tilte'] . "</p>" ;
-                   echo "</div>";
+                    echo  "<p class=\"card-text\">" . $row['tilte'] . "</p>" ;
+                    echo "</div>";
                     echo        "<div class=\"d-flex justify-content-between align-items-center\">";
                     echo          "<div class=\"btn-group\">";
                     echo          "</div>";
